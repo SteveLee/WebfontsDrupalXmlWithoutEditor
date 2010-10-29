@@ -1,0 +1,5 @@
+; $Id$
+name = Fonts.com Web Fonts
+description = Use your Webfonts fonts in Drupal Environment easily. For details please visit <a target="_blank" href='http://wfsdev.fonts.com'>Fonts.com</a>
+core = 6.x
+package = "User interface"

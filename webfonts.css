@@ -1,0 +1,306 @@
+/* default webfonts css */ 
+/****
+Copyright 2010 Monotype Imaging Inc.  
+This program is distributed under the terms of the GNU General Public License
+****/
+
+tr.odd td, tr.even td
+{
+	padding:0.7em !important;
+}
+.wfs_breadcrumb {
+clear:both;
+padding:5px 0 10px;
+color:#494949;
+font-size:11px;
+}
+.wfs_breadcrumb a, .wfs_breadcrumb a:link, .wfs_breadcrumb a:visited {
+padding-right:6px;
+color:#494949;
+text-decoration:underline;
+}
+.wfs_breadcrumb span {
+padding-left:6px;
+}
+.wfs_day_row {
+background:#F9F9F9 none repeat scroll 0 0;
+clear:both;
+padding:5px;
+}
+.wfs_blue_header{
+	color:#395596;
+	font-weight:bold
+	}
+	
+	
+.wfs_tabs
+{
+	clear:both;
+	margin:15px 0px;
+
+}
+
+.wfs_tabs div
+{
+	font-family:Verdana, Geneva, sans-serif !important;
+
+}
+.wfs_tabs ul
+{
+	border-bottom:1px solid #e0e0e0;
+	height:34px;
+	\ height:33px;
+	padding:0;
+	padding-left:8px;
+	list-style-type:none;
+	margin:0;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.wfs_tabs ul
+{
+	height:33px;
+}
+
+}
+.wfs_tabs ul li
+{
+	float:left;
+	display:block;
+	list-style-type:none;
+	background:none;
+	padding:0;
+	margin:0;
+
+	
+}
+.wfs_tabs ul li.tabNavigation
+{
+	list-style-type:none;
+	
+}
+	
+.wfs_tabs ul li a
+{
+	float:left;
+	margin:0;
+	padding:6px 15px 6px 15px;
+	border:1px solid #e0e0e0;
+	background:url(images/tab_bg.gif) repeat-x;
+	border-bottom:none;
+	text-decoration:none;
+	display:block;
+	font-size:12px;
+	color:#005596;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-right:5px;
+	outline:none;
+}
+
+.wfs_tabs ul li a:hover, .wfs_tabs ul li a.selected
+{
+	background:#fff;
+	color:#005596;
+	padding:7px 15px 7px 15px;
+	
+}
+.wfs_tabs ul.tabNavigation1
+{
+	height:33px !important;
+}
+.wfs_tab_form{
+margin-bottom:0px !important;	
+	}
+.wfs_action_main
+{
+background-color:#F5F5F5;
+border:1px solid #DDDDDD;
+padding:3px 5px;
+	
+}
+.wfs_clear
+{
+	clear:both
+}
+.wfs_select
+{
+	float:left;
+}
+.wfs_action
+{
+	float:left;
+	padding-left:10px
+}
+.wfs_action #wfs_btn_c
+{
+	clear:both;
+	
+}
+.wfs_action #wfs_btn_c
+{
+	display:none;
+}
+
+.wfs_action #wfs_btn_c ul
+{
+	position:absolute;
+	background:#fff;
+	border:1px solid #ccc;
+	margin:0 !important;
+	width:105px;
+	z-index:1;
+}
+.wfs_action #wfs_btn_c ul li
+{
+	list-style-type:none !important;
+	padding:0 !important;
+	margin:0 !important;
+	background: none !important;
+}
+#wfs_btn_c ul li:hover
+{
+	background:#eee !important;
+}
+.wfs_action #wfs_btn_c ul li input
+{
+	cursor:pointer;
+	text-align:left;
+	width:106px;
+}
+.wfs_action #wfs_btn_c ul li a
+{
+	display:block;
+	padding:2px;
+	width:88px;
+	color:#000;
+	text-decoration:none
+}
+.wfs_action #wfs_btn_c ul li a:hover
+{
+	background:#eee;
+}
+.wfs_action_a
+{
+	background:url(images/action_bg.gif) repeat-x left top;
+	text-decoration:none;
+	border:1px solid #BBBBBB;
+	color:#000 !important;
+	display:inline-block;
+	padding:0px 5px;
+}
+.wfs_action_a:hover
+{
+	text-decoration:none;
+}
+.wfs_action_a span
+{
+	background:url(images/action_ar.gif) no-repeat right 4px;
+	padding-right:15px;
+}
+.wfs_action_button
+{
+	background:none !important;
+	padding:0 !important;
+	border:none !important;
+	width:auto;
+	overflow:visible;
+}
+#webfonts, #webfonts_fonts, #webfontsDomain 
+{
+	border:1px solid #ddd;margin-bottom:1px !important;
+	margin-left:1px !important;
+	width:99.9%;
+}
+#webfonts th
+{
+	background:url(images/tab_bg.gif) repeat-x left -10px;
+	color:#000
+	
+}
+#webfonts tr.odd, #webfonts_fonts tr.odd, #webfontsDomain tr.odd
+{
+	background:#fbfbfb !important;
+}
+#webfonts tr.even, #webfonts_fonts tr.even, #webfontsDomain tr.even
+{
+	background:#f6f6f6 !important;
+}
+
+#webfonts tr.odd:hover, #webfonts tr.even:hover, #webfonts_fonts tr.even:hover, #webfontsDomain tr.even:hover, #webfonts_fonts tr.odd:hover, #webfontsDomain tr.odd:hover
+{
+	background:#e7e7e7 !important;
+}
+.item-list{
+	background-color:#F5F5F5 !important;
+	border:1px solid #DDDDDD;
+	padding:3px 5px;
+	}
+	
+/*button*/
+.wfs_b_o
+{
+	background-image:url(images/grey_button_bg_left.gif);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	display:block;
+	float:left;
+	margin-top:1px;
+	padding-left:10px;
+	
+}
+.wfs_b_i
+{
+	background-image:url(images/grey_button_bg_right.gif);
+	background-position:100% 0;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	display:block;
+	float:left;
+	padding:2px 10px 3px 0;
+	\ padding:1px 10px 3px 0;
+	
+}
+.wfs_b_s
+{
+	border:none;
+	background:none;
+	cursor:pointer;
+	margin:0 !important;
+	
+}
+.wfs_selectors
+{
+	overflow:hidden;
+	display:block;
+	height:29px;
+	line-height:1em;
+}
+.wfs_addselect_txt
+{
+	float:left;
+}
+.wfs_select_btn
+{
+	float:left;
+	margin:9px 0 0 10px;
+}
+.sticky-header{
+	display:none;
+	}
+.currClass{
+	font-weight:bold;
+	text-decoration:none;
+	color:#000 !important;
+	
+	}
+.wfs_class{
+	border: 1px solid #CCC;
+	padding:2px;
+	background-color:#F5F5F5;
+	}
+.pagination_div{
+	text-align:center;
+	margin-top:10px;
+	}
+/**/	

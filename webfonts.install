@@ -1,0 +1,53 @@
+<?php
+// $Id:$
+
+/**
+Copyright 2010 Monotype Imaging Inc.  
+This program is distributed under the terms of the GNU General Public License
+*/
+
+/**
+ * @file
+ * This file holds the functions that are called when the webfonts module is being installed.
+ *
+ * @ingroup webfonts
+ */
+ 
+include_once('admin/includes.php');
+
+/**
+ * Implementation of hook_install().
+ */
+function webfonts_install() {
+	$table_var = "CREATE TABLE IF NOT EXISTS `".TBLCONFIG."` (
+	`wfs_configure_id` int(200) NOT NULL AUTO_INCREMENT,
+	`project_name` varchar(255) NOT NULL,
+	`project_key` varchar(255) NOT NULL,
+	`project_day` varchar(255) NOT NULL,
+	`project_page_option` enum('0','1','2') NOT NULL,
+	`project_pages` text NOT NULL,
+	`project_options` enum('0','1') NOT NULL DEFAULT '0',
+	`wysiwyg_enabled` enum('0','1') NOT NULL COMMENT '0>disabled, 1>enabled',
+	`is_active` enum('0','1') NOT NULL COMMENT '0>inActive, 1>Active',
+	`user_id` varchar(255) NOT NULL,
+	`user_type` enum('0','1') NOT NULL COMMENT '0>free, 1> paid',
+	`editor_select` enum('0','1') NOT NULL DEFAULT '0',
+	`updated_date` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`wfs_configure_id`)
+	) ENGINE=MyISAM;";
+	db_query($table_var);
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function webfonts_uninstall() {
+	//drupal_uninstall_schema('webfonts');
+	variable_del('webfonts_username');
+	variable_del('webfonts_password');
+	variable_del('webfonts_userid');
+	variable_del('webfonts_usertype');
+	
+	$table_var= " DROP TABLE `".TBLCONFIG."` ";
+	db_query($table_var);
+}
