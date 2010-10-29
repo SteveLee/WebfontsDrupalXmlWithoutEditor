@@ -32,6 +32,10 @@ function webfonts_admin_settings(&$form_state, $param=0){
 			return GetLoginForm();
 			die();	
 		}
+		if(isset($_POST['op']) && $_POST['op']=='Reset Configuration'){
+			drupal_goto($_POST['return_url']);
+			die();
+		}
 		if(isset($_POST['webfonts_token'])){
 			$webfonts_token=explode("--",trim($_POST['webfonts_token']));
 			variable_set('webfonts_public_key',$webfonts_token[0]);
@@ -45,10 +49,7 @@ function webfonts_admin_settings(&$form_state, $param=0){
 			$wfs_private_key = $wfs_details[2];
 			}
 		
-		if(isset($_POST['op']) && $_POST['op']=='Reset Configuration'){
-			drupal_goto($_POST['return_url']);
-			die();
-		}
+		
 		if(isset($_POST['op']) && $_POST['op']=='Back to home'){
 			drupal_goto("admin/settings/webfonts");
 			die();
