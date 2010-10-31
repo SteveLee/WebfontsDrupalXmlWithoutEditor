@@ -43,8 +43,8 @@ function webfonts_install() {
  */
 function webfonts_uninstall() {
 	//drupal_uninstall_schema('webfonts');
-	variable_del('webfonts_username');
-	variable_del('webfonts_password');
+	variable_del('webfonts_public_key');
+	variable_del('webfonts_private_key');
 	variable_del('webfonts_userid');
 	variable_del('webfonts_usertype');
 	
