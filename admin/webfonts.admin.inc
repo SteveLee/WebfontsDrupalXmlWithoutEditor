@@ -128,7 +128,7 @@ function GetLoginForm(){
 	 '#default_value' =>  variable_get('webfonts_public_key','')."--".variable_get('webfonts_private_key',''),
 	 '#prefix' => '<div id="token_div" >',
 	 '#suffix' => '</div><div style="margin-bottom:10px;"><a href="'.SIGNUPURI.'" target="_blank" title="webfonts.fonts.com">Sign up</a> | <a href="'.GETKEYURI.'" target="_blank" title="webfonts.fonts.com">Get authentication token key</a></div>', 
-	 '#size' => 145
+	 '#size' => 125
 	);
 		
 	$form['webfonts_login']['submit'] = array(
